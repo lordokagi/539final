@@ -1,0 +1,120 @@
+.skip a {
+    position: absolute;
+    left: -500px;
+    height: 25px;
+}
+
+.skip a:focus {
+    position: static;
+    text-decoration: underline;
+}
+
+body {
+    font-family: "forma-djr-display", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    background-color: rgba(53, 134, 172, 0.982);
+    color: black;
+    font-size: 18px;
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    list-style-type: none;
+    font-weight: 400;
+    font-size: 18px;
+    background-color: white;
+    color: rgba(29, 72, 93, 1);
+}
+
+nav li a {
+    display: block;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+nav li.active a {
+    font-weight: 500;
+    background-color: rgb(255, 224, 102);
+}
+
+nav li a:focus, nav li a:hover {
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 600;
+    margin: 20px;
+    color: white;
+}
+
+h2 + img {
+    width: 100%;
+    height: auto;
+}
+
+#insta {
+    display: none;
+}
+
+#arrow {
+    display: inline;
+}
+
+h2 {
+    font-size: 30px;
+    margin: 20px;
+    color: rgb(255, 224, 102);
+}
+
+#main p {
+    line-height: 125%;
+    font-size: 20px;
+    background-color: white;
+    padding: 20px;
+    margin-top: -5px;
+}
+
+.about {
+    background-color: white;
+}
+
+#main ul {
+    margin-top: -5px;
+    padding-left: 40px;
+    padding-right: 20px;
+    line-height: 125%;
+    font-size: 19px;
+    list-style-type: disc;
+}
+
+.about div:first-child {
+    margin-bottom: 20px;
+}
+
+footer {
+    padding: 30px 20px 20px 20px;
+    font-size: 17px;
+    font-weight: 400;
+    background-color: white;
+}
+
+@media screen and (min-width: 720px) {
+    nav ul {
+        width: 40%;
+        margin-left: 60%;
+        list-style-type: none;
+        justify-items: center;
+        font-weight: 400;
+        font-size: 20px;
+    }
+    .about{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 20px;
+    }
+}
