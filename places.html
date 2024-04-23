@@ -3,9 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- remember to put a nice favicon -->
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="images/favicon-letmedrawurdogs.png">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/html5reset.css">
     <link rel="stylesheet" href="css/style.css">
@@ -15,6 +15,7 @@
 
 <body>
     <div class="skip"> <a href="#main">Skip to main content</a></div>
+
     <header>
         <nav>
             <ul>
@@ -23,13 +24,114 @@
                 <li><a href="about.html">About</a></li>
             </ul>
         </nav>
-        <h1>Places</h1>
+        <h1>States Traveled</h1>
     </header>
+
     <main id="main">
+        <h2>These are the states Sammy has been and how much I think he enjoyed himself.</h2>
+        <div id="plgrid">
+            <img id=mappic src="images/map.png" width="5764" height="3642" alt="continental United States map"
+                usemap="#usmap">
+            <map name="usmap">
+                <area id="caa" shape="poly" alt="California" coords="16,115,65,127,51,175,107,264,82,300,9,214">
+                <area id="ina" shape="rect" alt="Indiana" coords="495,159,462,223">
+                <area id="nja" shape="rect" alt="New Jersey" coords="634,145,616,181">
+                <area id="nya" shape="poly" alt="New York" coords="619,81,557,136,629,143">
+                <area id="oha" shape="rect" alt="Ohio" coords="546,153,497,205">
+                <area id="paa" shape="rect" alt="Pennsylvania" coords="555,144,615,177">
+                <area id="ria" shape="rect" alt="Rhode Island" coords="652,135,657,124">
+                <area id="txa" shape="poly" alt="Texas"
+                    coords="265,252,260,324,209,320,326,429,387,362,385,304,303,290,304,253">
+            </map>
+
+            <img id=mappicl src="images/map.png" width="5764" height="3642" alt="continental United States map"
+                usemap="#usmapl">
+            <map name="usmapl">
+                <area id="caal" shape="poly" alt="California"
+                    coords="22,163,94,180,74,253,157,378,147,417,54,401,5,223">
+                <area id="inal" shape="rect" alt="Indiana" coords="709,228,664,324">
+                <area id="njal" shape="rect" alt="New Jersey" coords="905,208,885,258">
+                <area id="nyal" shape="poly" alt="New York" coords="910,213,873,191,787,208,889,102">
+                <area id="ohal" shape="rect" alt="Ohio" coords="713,296,787,219">
+                <area id="paal" shape="poly" alt="Pennsylvania" coords="879,195,791,211,793,262,884,248">
+                <area id="rial" shape="rect" alt="Rhode Island" coords="933,181,938,193,947,187,941,178">
+                <area id="txal" shape="poly" alt="Texas"
+                    coords="377,359,435,363,433,404,553,435,564,518,486,568,485,614,448,603,392,515,357,538,297,457,367,462">
+            </map>
+
+            <div class="controls">
+                <div class="genfilt">
+                    <button type="button" class="control" data-filter="all">All</button>
+                    <button type="button" class="control" data-sort="price:asc">Lo-Hi</button>
+                    <button type="button" class="control" data-sort="price:desc">Hi-Lo</button>
+                </div>
+                <div class="statebutts">
+                    <button type="button" class="control" id="cab" data-filter=".ca">CA</button>
+                    <button type="button" class="control" id="inb" data-filter=".in">IN</button>
+                    <button type="button" class="control" id="njb" data-filter=".nj">NJ</button>
+                    <button type="button" class="control" id="nyb" data-filter=".ny">NY</button>
+                    <button type="button" class="control" id="ohb" data-filter=".oh">OH</button>
+                    <button type="button" class="control" id="pab" data-filter=".pa">PA</button>
+                    <button type="button" class="control" id="rib" data-filter=".ri">RI</button>
+                    <button type="button" class="control" id="txb" data-filter=".tx">TX</button>
+                </div>
+            </div>
+
+            <div class="container gallery" data-price="2">
+                <figure class="mix nj">
+                    <img src="images/sammy-footsnow.png"
+                        alt="A photo of Sammy, a small, white dog, licking his foot, outin the snow.">
+                    <figcaption>New Jersey: 2/10 cold and uneventful</figcaption>
+                </figure>
+                <figure class="mix ny" data-price="10">
+                    <img src="images/sammy-sittingsmiling.jpg"
+                        alt="A photo of Sammy, a small, white dog, sitting and smiling.">
+                    <figcaption>New York: 10/10 first real home</figcaption>
+                </figure>
+                <figure class="mix ca" data-price="10">
+                    <img src="images/sammy-sashatoby.jpg"
+                        alt="A photo of three small dogs on a walk together, in a row.">
+                    <figcaption>California: 10/10 friends live here</figcaption>
+                </figure>
+                <figure class="mix ri" data-price="7">
+                    <img src="images/sammy-providence.jpg"
+                        alt="A photo of Sammy, a small, white dog, sitting on grass.">
+                    <figcaption>Rhode Island: 7/10 lots of grass</figcaption>
+                </figure>
+                <figure class="mix pa" data-price="6">
+                    <img src="images/sammy-trunk.jpg" alt="A photo of Sammy, a small, white dog, in an open car trunk.">
+                    <figcaption>Pennsylvania: 6/10 confusing</figcaption>
+                </figure>
+                <figure class="mix in" data-price="9">
+                    <img src="images/sammy-chicks.jpg"
+                        alt="A photo of Sammy, a small, white dog, walking on grass with five baby chicks.">
+                    <figcaption>Indiana: 9/10 lots of grass and land</figcaption>
+                </figure>
+                <figure class="mix oh" data-price="8">
+                    <img src="images/sammy-baby.jpg"
+                        alt="A photo of a baby napping on a bed and Sammy, a small, white dog, napping on the floor next to him.">
+                    <figcaption>Ohio: 8/10 small friend lives here</figcaption>
+                </figure>
+                <figure class="mix tx" data-price="5">
+                    <img src="images/sammy-jimmy.jpg"
+                        alt="A photo of Sammy, a small, white dog, and Jimmy, a small, brown dog, next to each other.">
+                    <figcaption>Texas: 5/10 hot and mean</figcaption>
+                </figure>
+            </div>
+        </div>
     </main>
+
     <footer>
         <p>Dawn Zeng SI 539 2024</p>
     </footer>
+
+    <script src="js/places.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script>
+        var containerEl = document.querySelector('.container');
+        var mixer = mixitup(containerEl);
+    </script>
+
 </body>
 
 </html>

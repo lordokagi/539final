@@ -3,12 +3,12 @@ let w;
 
 window.onload = function () {
     w = window.innerWidth;
-    if (w >= 800) {
-        console.log("more than 800");
+    if (w >= 1024) {
+        console.log("more than 1024");
         document.querySelector("#arrow").innerHTML = "→";
     }
     else {
-        console.log("less than 800");
+        console.log("less than 1024");
         document.querySelector("#arrow").innerHTML = "↓";
     }
 };
